@@ -5,7 +5,7 @@ Project created as a part of scrimba.com's 'Learn React' course.
 Dev environment generated using [Vite](vitejs.dev). 
 
 To view completed project visit:
-[http://localhost:5173](http://localhost:5173)
+[https://classy-cocada-c037cb.netlify.app/](https://classy-cocada-c037cb.netlify.app/)
 
 ## Available Scripts
 
