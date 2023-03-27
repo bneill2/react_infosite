@@ -1,4 +1,4 @@
-import react from 'React'
+import React from 'React'
 
 export default function Main() {
     return (
