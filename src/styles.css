@@ -7,19 +7,29 @@
 body {
    margin: 0;
    font-family: Inter, sans-serif;
-   background-color: #282D35;
 }
 
-.navbar {
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 1.75rem;
-    background-color: #21222A;
+    background-color: #FFFFFF;
     width: 100%;
     height: 5.7rem;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     
 
+}
+
+nav.dark {
+    background-color: #21222A;
 }
 
 .nav--header {
@@ -37,18 +47,85 @@ body {
     margin-right: .5rem; 
 }
 
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.toggler p {
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+
 .nav--title {
     font-weight: 600;
     color: #DEEBF8;
 }
 
-.main {
+main {
     width: 100%;
     padding: 3.5rem 1.75rem;
     color: #FFFFFF;
-    background-image: url("./src/assets/react-half-icon.png");
+    background-image: url("./src/assets/react-icon-light.png");
     background-repeat: no-repeat;
-    background-position: right 78%;;
+    background-position: right 78%;
+    color: #2B283A;
+}
+
+main.dark {
+    background-image: url("./src/assets/react-icon-dark.png"); 
+    background-color: #282D35;
+    color: white;    
 }
 
 .main--header {
